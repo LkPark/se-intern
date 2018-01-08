@@ -1,0 +1,20 @@
+version: '2'
+services:
+  se_intern:
+    build: .
+    command: npm start
+    expose:
+      - ${PORT}
+    ports:
+      - ${PORT}
+    environment:
+      - NODE_ENV=development
+      - PORT=${PORT}
+      - VIRTUAL_HOST=${VIRTUAL_HOST}
+    volumes:
+      - .:/app:rw
+      - /app/node_modules
+networks:
+  default:
+    external:
+      name: nginx-proxy

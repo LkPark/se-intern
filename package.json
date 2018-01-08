@@ -1,0 +1,38 @@
+{
+  "name": "se-intern",
+  "version": "1.0.0",
+  "description": "se-intern",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run server:dev",
+    "server:dev": "npx nodemon ./src/index.js",
+    "server:prod": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo \"Error: no lint specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LkPark/se-intern.git"
+  },
+  "keywords": [
+    "intern"
+  ],
+  "author": "Vasile Mardari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LkPark/se-intern/issues"
+  },
+  "homepage": "https://github.com/LkPark/se-intern#readme",
+  "dependencies": {
+    "cors": "2.8.4",
+    "body-parser": "1.18.2",
+    "express": "4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "1.14.8"
+  },
+  "engines": {
+    "node": ">= 8.9.4",
+    "npm": ">= 5.6.0"
+  }
+}
